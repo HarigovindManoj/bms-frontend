@@ -1,0 +1,120 @@
+
+.book-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    
+    background-image: url('/assets/library-book-bookshelf-read.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    position: relative;
+  }
+
+  .book-layout::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.65);
+    z-index: 0;
+  }
+
+  .book-layout > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Header Styling */
+  .app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(5px); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 70px;
+  }
+  
+  .header-left, .header-right {
+    flex: 1;
+  }
+  
+  .header-left {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .header-left strong{
+    font-weight: bolder;
+    font-size: 30px;
+    color: #0d6efd;
+  }
+  
+  .header-right {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .view-books-btn {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  
+  .view-books-btn:hover {
+    background-color: #0b5ed7;
+  }
+  
+  .logo {
+    height: 40px;
+    width: auto;
+  }
+  
+ 
+  .main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: transparent;
+  }
+  
+  /* Footer Styling */
+
+  .app-footer {
+    background-color: #212529;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  
+  .main-content .container {
+    padding: 0 !important;
+    min-height: auto !important;
+  }
+  
+  .main-content .card {
+    max-height: calc(100vh - 170px); 
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+
+  }

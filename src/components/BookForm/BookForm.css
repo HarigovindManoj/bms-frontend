@@ -1,0 +1,38 @@
+
+.book-form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .compact-form .mb-2 {
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .compact-form label {
+    margin-bottom: 0.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .compact-form .form-control,
+  .compact-form .form-select {
+    padding: 0.375rem 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .compact-form .form-text {
+    margin-top: 0.1rem;
+    font-size: 0.75rem;
+  }
+  
+  .card-body {
+    padding: 1rem !important;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+  }
+  
+  
+  .img-thumbnail {
+    max-height: 150px !important;
+  }
