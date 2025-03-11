@@ -1,6 +1,6 @@
 import axios from "axios"; 
 
-const API_URL = 'http://localhost:8080/book';
+const API_URL = 'https://book-management-backend-1-42nu.onrender.com';
 
 export const createBook = async (bookData) => {
     // Check if bookData is FormData (has image) or regular JSON
